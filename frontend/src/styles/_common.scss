@@ -1,0 +1,49 @@
+:root {
+  --primary-color: #f65d4e;
+  --color-border: #e6e6e6;
+  --light: #999999;
+  --border: #e6e6e6;
+  --text: #444444;
+  --black: #000;
+}
+
+html,
+body {
+  font-size: 14px;
+  font-family: $sora, sans-serif;
+
+  #root {
+    height: 100%;
+
+    .App {
+      height: 100%;
+    }
+  }
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $sora, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-title {
+  background-color: #f0f0f0;
+  padding: 0 30px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    width: 100%;
+    max-width: 1290px;
+    margin: auto;
+    font-size: 64px;
+    font-weight: 500;
+  }
+}

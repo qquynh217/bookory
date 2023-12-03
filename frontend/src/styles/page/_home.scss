@@ -1,0 +1,120 @@
+.home-page_inner {
+    max-width: 1320px;
+    margin: auto;
+    padding: 0 15px;
+    margin-top: 60px;
+    display: flex;
+
+    .best-sellers {
+        width: 67%;
+        overflow: hidden;
+        margin-right: 10px;
+
+        .title {
+            position: relative;
+
+            .ant-divider {
+                margin-top: 0;
+                margin-bottom: 40px;
+            }
+
+            .app-button {
+                position: absolute;
+                top: 5px;
+                right: 0;
+            }
+        }
+
+        .best-sellers_list {
+            margin-left: -30px;
+        }
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .most-viewed {
+        width: 33%;
+        margin-left: 10px;
+
+        .most-viewed_container {
+            margin: 40px 0 0;
+            padding: 30px;
+            background-color: #f4fbf2;
+            border-radius: 20px 20px 20px 20px;
+
+            .book-item .thumb {
+                width: 35%;
+            }
+        }
+    }
+
+}
+
+.home-page {
+
+    .new-books {
+        margin: 40px 0;
+        padding: 80px 0;
+        background-color: #fff8f2;
+    }
+
+    .join-community {
+        max-width: 1290px;
+        margin: 0 auto 40px;
+        border-radius: 24px;
+        background-color: #a1d0b9;
+        display: flex;
+
+        * {
+            color: #fff;
+        }
+
+        .join-community-input {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            height: 342px;
+            padding: 30px 30px 30px 80px;
+
+            .title {
+                font-size: 36px;
+            }
+        }
+
+        .input {
+            position: relative;
+
+            input {
+                width: 100%;
+                color: #000;
+            }
+
+            .app-button {
+                position: absolute;
+                padding: 13px 30px;
+                top: 0;
+                right: 0;
+            }
+        }
+
+    }
+
+    .join-community-thumb {
+        flex: 1;
+        background-image: url('resources/images/bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

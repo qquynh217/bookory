@@ -1,0 +1,25 @@
+.book-list_item {
+    margin-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-right: 1px solid var(--border);
+
+    &::before {
+        bottom: -30px;
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        background-color: var(--border);
+    }
+
+    &.before-none {
+        margin-bottom: 0;
+    }
+
+    &.before-none::before {
+        height: 0;
+        bottom: 0;
+    }
+}

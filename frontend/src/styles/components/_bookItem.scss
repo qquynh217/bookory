@@ -1,0 +1,58 @@
+.book-item {
+  display: flex;
+  margin: auto;
+  transition: all 0.3s ease;
+
+  .thumb {
+    max-width: 190px;
+    aspect-ratio: 190/266;
+    border-radius: 16px;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+
+  .book-item_info {
+    flex: 1;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .author {
+      color: var(--light);
+      font-size: 12px;
+    }
+
+    .price {
+      color: var(--primary-color);
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  &.no-flex {
+    display: block;
+    width: min-content;
+    width: 100%;
+
+    .thumb {
+      margin: 0;
+      max-width: none;
+      width: 100%;
+    }
+
+    .book-item_info {
+      padding-top: 15px;
+    }
+  }
+}
